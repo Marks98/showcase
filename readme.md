@@ -8,6 +8,7 @@ Na svém github mám více projektů, které jsou ale neveřejné. V případě 
 - [Laravel](https://github.com/Marks98/showcase/tree/master/laravel)
 - [Nette](https://github.com/Marks98/showcase/tree/master/nette)
 - [Vuejs](https://github.com/Marks98/showcase/tree/master/vuejs)
+- [Tailwind CSS](https://github.com/Marks98/showcase/tree/master/tailwind)
 
 # Popis jednotlivých technologií
 
@@ -51,8 +52,11 @@ Jednoduchá továrna pro vytváření univerzálního formuláře pro správu č
 
 Jedná se o jednoduchou Vue ukázku používání vlastních komponent, která obsahuje dva ukázkové soubory. První soubor **App.vue** importuje univerzálně připravenou komponentu **InputComponent.vue**, do které lze zaslat jakékoliv dynamické údaje. Například **název pole**, **typ**, **jestli je pole povinné** a další údaje definové v props.  
 
-## Tailwind
-(Obsah připravuji)
+## Tailwind CSS
+
+### Objednávky
+
+Stylování jednoduché administrativní části webu pomocí **Tailwind CSS**. Součástí je responzivní zobrazení přizpůsobené pro mobilní zařízení i počítače.
 
 ## PHP
 (Obsah připravuji)
