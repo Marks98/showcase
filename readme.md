@@ -51,6 +51,8 @@ Jednoduchá továrna pro vytváření univerzálního formuláře pro správu č
 
 Jedná se o jednoduchou Vue ukázku používání vlastních komponent, která obsahuje dva ukázkové soubory. První soubor **App.vue** importuje univerzálně připravenou komponentu **InputComponent.vue**, do které lze zaslat jakékoliv dynamické údaje. Například **název pole**, **typ**, **jestli je pole povinné** a další údaje definové v props.  
 
+## Tailwind
+(Obsah připravuji)
 
 ## PHP
 (Obsah připravuji)

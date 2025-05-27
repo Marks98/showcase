@@ -1,0 +1,218 @@
+<!-- Ukázka práce s Tailwind CSS.
+     Stylování je načteno z CDN kvůli jednoduchému spuštění bez závislostí.
+     Stránka s objednávkami je plně responzivní – funguje na mobilu i desktopu.
+ -->
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <title>Objednávky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Načtení Google fontu Inter a nastavení různých vah přes vlastní CSS třídy -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <style>
+        .inter-600 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .inter-500 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .inter-400 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!-- Použití knihovny Font Awesome pro ikony -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-neutral-100">
+<div class="container mx-auto">
+    <div class="px-8 py-4 lg:px-16 lg:py-8">
+        <h1 class="inter-600 text-[32px] leading-[40px]">Objednávky</h1>
+    </div>
+    <div class="flex w-full flex-row items-start justify-center gap-1 rounded-[32px] pr-8 pb-16 pl-1 lg:gap-8 lg:px-16 lg:pb-32">
+        <div class="hidden flex-col items-center gap-3 rounded-xl bg-white px-3 py-8 lg:flex lg:w-1/4 xl:px-6">
+            <div class="flex flex-col items-center gap-2 text-center">
+                <h2 class="inter-500 text-xl leading-7 text-neutral-900">Uživatelský Panel</h2>
+                <a href="mailto:vas-email@gmail.com" class="inter-400 text-sm leading-[22px] text-neutral-500">vas-email@gmail.com</a>
+            </div>
+            <nav class="flex w-full flex-col justify-stretch gap-3">
+                <a href="" class="btn inter-600 flex h-[48px] items-center justify-between gap-2 rounded-lg bg-blue-500 px-6 py-3 leading-6 text-white shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="fa fa-shopping-bag invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Objednávky</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="" class="btn inter-600 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-white px-6 py-3 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="fa fa-file-alt invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Faktury</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="" class="btn inter-600 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-white px-6 py-3 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="fas fa-heart invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Seznam přání</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="" class="btn inter-600 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-white px-6 py-3 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="fas fa-database invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Zvýhodněné zboží</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="" class="btn inter-600 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-white px-6 py-3 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="far fa-bookmark invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Slevy</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="" class="btn inter-600 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-white px-6 py-3 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="fas fa-search invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Hlídací pes</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="" class="btn inter-600 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-white px-6 py-3 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                    <div class="w-full text-left">
+                        <p class="flex items-center"><i class="fa fa-cog invisible mr-2 xl:visible"></i> <span class="text-xs xl:text-sm">Nastavení</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+            <a href="" class="btn inter-600 inter-400 flex h-[48px] w-full items-center justify-between gap-2 rounded-lg bg-red-100 px-6 py-3 leading-6 text-red-500 shadow-none hover:bg-red-500 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                <div class="w-full text-left">
+                    <div class="flex w-full justify-center text-center">Odhlásit se</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="flex flex-col gap-1 lg:hidden">
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg bg-blue-500 px-3 py-1 leading-6 text-white shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fa fa-shopping-bag"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-white px-3 py-1 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fa fa-file-alt"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-white px-3 py-1 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fas fa-heart"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-white px-3 py-1 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fas fa-database"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-white px-3 py-1 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="far fa-bookmark"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-white px-3 py-1 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fas fa-search"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-white px-3 py-1 leading-6 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fa fa-cog"></i></a>
+            <a href="" class="btn inter-500 flex items-center justify-between gap-2 rounded-lg border-none bg-red-100 px-3 py-1 leading-6 text-red-500 shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+        <main class="w-full lg:w-3/4">
+            <div class="flex flex-col items-center justify-between gap-4 lg:gap-8">
+                <div class="items-scratch flex w-full flex-col gap-3 rounded-xl bg-white p-3 lg:gap-6 lg:p-6">
+                    <div class="flex w-full flex-col gap-3">
+                        <div class="flex w-full flex-col items-start lg:flex-row lg:items-center">
+                            <h3 class="inter-600 flex-1 text-lg">Objednávka: 1</h3>
+                            <span class="rounded-sm bg-green-100 px-2 py-1">Zaplacená</span>
+                        </div>
+                        <div class="flex w-full items-center gap-2">
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col lg:flex-row">
+                        <div class="w-full lg:w-1/2">
+                            <p class="inter-400">Datum: <span class="text-gray-500">1. 1. 2025</span></p>
+                            <p class="inter-400">Cena: <span class="text-gray-500">500 Kč</span></p>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-row-reverse items-center justify-between lg:flex-row">
+                        <a href="" class="btn inter-600 flex h-[48px] items-center justify-between gap-2 rounded-lg bg-blue-500 px-6 py-3 leading-6 text-white shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                            <div class="w-full text-left">
+                                <p class="flex items-center gap-2">Detail <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-3 lg:gap-6">
+                            <a href="" class="inter-500 flex flex-row items-center gap-2 text-sm text-neutral-900 transition hover:text-blue-500 focus:border-2 focus:border-blue-500">
+                                <p>Zopakovat <i class="fas fa-redo-alt ml-2"></i></p>
+                            </a>
+                            <a href="" class="inter-500 flex flex-row items-center gap-2 text-sm text-neutral-900 transition hover:text-blue-500 focus:border-2 focus:border-blue-500">
+                                <p>Zrušit <i class="fa fa-times ml-1"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-scratch flex w-full flex-col gap-3 rounded-xl bg-white p-3 lg:gap-6 lg:p-6">
+                    <div class="flex w-full flex-col gap-3">
+                        <div class="flex w-full flex-col items-start lg:flex-row lg:items-center">
+                            <h3 class="inter-600 flex-1 text-lg">Objednávka: 2</h3>
+                            <span class="rounded-sm bg-red-300 px-2 py-1">Nezaplacená</span>
+                        </div>
+                        <div class="flex w-full items-center gap-2">
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col lg:flex-row">
+                        <div class="w-full lg:w-1/2">
+                            <p class="inter-400">Datum: <span class="text-gray-500">30. 5. 2025</span></p>
+                            <p class="inter-400">Cena: <span class="text-gray-500">230 Kč</span></p>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-row-reverse items-center justify-between lg:flex-row">
+                        <a href="" class="btn inter-600 flex h-[48px] items-center justify-between gap-2 rounded-lg bg-blue-500 px-6 py-3 leading-6 text-white shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                            <div class="w-full text-left">
+                                <p class="flex items-center gap-2">Detail <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-3 lg:gap-6">
+                            <a href="" class="inter-500 flex flex-row items-center gap-2 text-sm text-neutral-900 transition hover:text-blue-500 focus:border-2 focus:border-blue-500">
+                                <p>Zopakovat <i class="fas fa-redo-alt ml-2"></i></p>
+                            </a>
+                            <a href="" class="inter-500 flex flex-row items-center gap-2 text-sm text-neutral-900 transition hover:text-blue-500 focus:border-2 focus:border-blue-500">
+                                <p>Zaplatit <i class="fa fa-check ml-2"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-scratch flex w-full flex-col gap-3 rounded-xl bg-white p-3 lg:gap-6 lg:p-6">
+                    <div class="flex w-full flex-col gap-3">
+                        <div class="flex w-full flex-col items-start lg:flex-row lg:items-center">
+                            <h3 class="inter-600 flex-1 text-lg">Objednávka: 3</h3>
+                            <span class="rounded-sm bg-yellow-200 px-2 py-1">Stornovaná</span>
+                        </div>
+                        <div class="flex w-full items-center gap-2">
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                            <i class="fas fa-image rounded-lg bg-gray-200 p-3 text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col lg:flex-row">
+                        <div class="w-full lg:w-1/2">
+                            <p class="inter-400">Datum: <span class="text-gray-500">27. 5. 2025</span></p>
+                            <p class="inter-400">Cena: <span class="text-gray-500">300 Kč</span></p>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-row-reverse items-center justify-between lg:flex-row">
+                        <a href="" class="btn inter-600 flex h-[48px] items-center justify-between gap-2 rounded-lg bg-blue-500 px-6 py-3 leading-6 text-white shadow-none hover:bg-blue-600 hover:text-white focus:border-[1.5px] focus:border-white disabled:bg-white disabled:text-gray-400">
+                            <div class="w-full text-left">
+                                <p class="flex items-center gap-2">Detail <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-3 lg:gap-6">
+                            <a href="" class="inter-500 flex flex-row items-center gap-2 text-sm text-neutral-900 transition hover:text-blue-500 focus:border-2 focus:border-blue-500">
+                                <p>Zopakovat <i class="fas fa-redo-alt ml-2"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
