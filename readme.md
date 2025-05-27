@@ -1,9 +1,18 @@
-# Ukázky kódu
+# Showcase repozitář
 
-Ve složkách v adresáři pod jednotlivými složkami přidávám ukázky jednotlivých prací s konkrétními technologiemi.
+Tento repozitář slouží jako ukázka mých dovedností v různých technologiích. Každá složka obsahuje konkrétní příklad projektu nebo části kódu.
+Na svém github mám více projektů, které jsou ale neveřejné. V případě zájmu mě neváhejte kontaktovat – mohu vám udělit přístup.
 
+# Seznam technologií
+
+- [Laravel](https://github.com/Marks98/showcase/tree/master/laravel)
+- [Nette](https://github.com/Marks98/showcase/tree/master/nette)
+
+# Popis jednotlivých technologií
 
 ## Laravel
+
+[Ukázka tohoto projektu](https://odvsehotrochu.cz/)
 
 ### PublishArticles
 
@@ -19,6 +28,8 @@ Controller pro správu klíčových slov v administraci. Kód ukazuje práci s v
 
 ## Nette
 
+[Ukázka tohoto projektu](https://starboltgames.com/)
+
 ### DevblogPresenter
 
 Presenter, který v administrativní části zajišťuje výpis, přidání, editaci a mazání článků (DevBlogu). Presenter také obsahuje továrny pro formuláře a akce pro mazání / úpravu viditelnosti článků.
@@ -32,11 +43,16 @@ Tato servisní třída zajišťuje CRUD operace pro DevBlog v administrační č
 Jednoduchá továrna pro vytváření univerzálního formuláře pro správu článků v administrační části.
 
 ## PHP
+(Obsah připravuji)
 
 ## Vue.js
+(Obsah připravuji)
 
 ## jQuery
+(Obsah připravuji)
 
 ## C#
+(Obsah připravuji)
 
 ## C++
+(Obsah připravuji)
