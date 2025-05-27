@@ -44,6 +44,10 @@ Tato servisní třída zajišťuje CRUD operace pro DevBlog v administrační č
 
 Jednoduchá továrna pro vytváření univerzálního formuláře pro správu článků v administrační části.
 
+### UserAuthentication
+
+Ukázka vlastního systému přihlašování. Třída obsahuje **vytvoření a validaci přihlašovacího formuláře**, podporu pro **zapamatování přihlášení** (*nastavení expirace*), ochranu proti spamu pomocí **Google reCAPTCHA** a základní **kontrolu uživatelských oprávnění** (*např. role admin*).
+
 ## Vue.js
 
 ### Komponenty
