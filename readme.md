@@ -1,32 +1,42 @@
-# Ukázky kódu v PHP (Nette a Laravel)
+# Ukázky kódu
 
-Ve složkách v adresáři přikládám ukázky kódu z osobních projektů postavených na těchto technologiích.
+Ve složkách v adresáři pod jednotlivými složkami přidávám ukázky jednotlivých prací s konkrétními technologiemi.
 
 
-# Laravel
+## Laravel
 
-## PublishArticles
+### PublishArticles
 
 Volatelný cron příkaz, který po zavolání publikuje články, které jsou připraveny k publikování (mají vyplněné "published_at"). V případě, že je článek publikován, zašle se informace vyhledávačům přes technologii IndexNow.
 
-## HomepageController
+### HomepageController
 
 Controller pro hlavní stránku blogu. Pro zvýšení výkonu webu používám cache. Kód ukazuje použití Eloquentu, eager loadingu, řazení a základní optimalizační přístupy.
 
-## KeywordsController
+### KeywordsController
 
 Controller pro správu klíčových slov v administraci. Kód ukazuje práci s validací,  resource routami (index, create, store, edit, update), přesměrováními a flash zprávami
 
-# Nette
+## Nette
 
-## DevblogPresenter
+### DevblogPresenter
 
 Presenter, který v administrativní části zajišťuje výpis, přidání, editaci a mazání článků (DevBlogu). Presenter také obsahuje továrny pro formuláře a akce pro mazání / úpravu viditelnosti článků.
 
-## Devblog - Třída (admin – modelová vrstva)
+### Devblog - Třída (admin – modelová vrstva)
 
 Tato servisní třída zajišťuje CRUD operace pro DevBlog v administrační části systému. Třída používá `Nette\Database\Explorer` a je propojena pouze s `DevblogPresenterem` v administrační části.
 
-## Devblog - Formulář
+### Devblog - Formulář
 
 Jednoduchá továrna pro vytváření univerzálního formuláře pro správu článků v administrační části.
+
+## PHP
+
+## Vue.js
+
+## jQuery
+
+## C#
+
+## C++
