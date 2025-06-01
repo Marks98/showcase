@@ -73,6 +73,17 @@ Ukázka jednoduchého dynamického kalendáře vytvořeného ve Vue. Kalendář 
 
 Stylování jednoduché administrativní části webu pomocí **Tailwind CSS**. Součástí je responzivní zobrazení přizpůsobené pro mobilní zařízení i počítače.
 
+### Backgrounds Effects
+
+Jednoduchá single-page ukázka, ve které prezentuji různé možnosti práce s dynamickým pozadím pomocí **Tailwind CSS**. 
+Stránka obsahuje:
+- animovaný gradient pozadí,
+- pozadí měnící se podle scrollování,
+- video na pozadí,
+- a moderní *glassmorphism* efekt.
+
+Cílem je demonstrovat využití Tailwind utility tříd a kombinaci s interaktivním chováním na stránce.
+
 ## PHP
 (Obsah připravuji)
 
