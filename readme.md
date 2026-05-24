@@ -9,12 +9,13 @@ Na svém github mám více projektů, které jsou ale neveřejné. V případě 
 - [Nette](https://github.com/Marks98/showcase/tree/master/nette)
 - [Vuejs](https://github.com/Marks98/showcase/tree/master/vuejs)
 - [Tailwind CSS](https://github.com/Marks98/showcase/tree/master/tailwind)
+- [C++](https://github.com/Marks98/FileManager)
 
 # Popis jednotlivých technologií
 
 ## Laravel
 
-[Ukázka tohoto projektu](https://odvsehotrochu.cz/)
+[Ukázka tohoto projektu](https://odvsehotrochu.cz/) - Již nefunkční web, [Wayback Archive](https://web.archive.org/web/20250812145145/https://odvsehotrochu.cz/)
 
 ### PublishArticles
 
@@ -84,6 +85,12 @@ Stránka obsahuje:
 
 Cílem je demonstrovat využití Tailwind utility tříd a kombinaci s interaktivním chováním na stránce.
 
+## C++
+
+Projekt ještě není nasazen, ale pushuji do nového separatního projektu [FileManager](https://github.com/Marks98/FileManager)
+
+Projekt by měl umožnit připojit se k FTP. Vypsat obsah a popřípadě přehrávat videa, zobrazit obrázky a další podporované formáty.
+
 ## PHP
 (Obsah připravuji)
 
@@ -93,5 +100,4 @@ Cílem je demonstrovat využití Tailwind utility tříd a kombinaci s interakti
 ## C#
 (Obsah připravuji)
 
-## C++
-(Obsah připravuji)
+
